@@ -1,6 +1,6 @@
 <img align="right" width="179" height="118" alt="ISDI CODER LOGO" src="/dist/assets/isdi_logo_hq.jpg">
 
-# :zap: Challenge Week 12
+# :zap: Challenge Week 11 Xmas
 
 ## Robots
 
@@ -33,9 +33,9 @@ Los datos deben de tener persistencia en **_JSON-Server_**. Crea un servicio/rep
 
 ## Resultado
 
-https://patricia-challenge-w12.netlify.app/
+https://patricia-challenge-w11-xmas.netlify.app/
 
-https://sonarcloud.io/summary/overall?id=patifusa-20_202212-W12-patricia-rufino
+https://sonarcloud.io/summary/overall?id=patifusa-20_202212-W11-xmas-patricia-rufino
 
 ## Tecnologías usadas
 
