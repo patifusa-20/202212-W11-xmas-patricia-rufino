@@ -1,4 +1,4 @@
-<img align="right" width="179" height="118" alt="ISDI CODER LOGO" src="/dist/assets/isdi_logo_hq.jpg">
+<img align="right" width="179" height="118" alt="ISDI CODER LOGO" src="/public/assets/isdi_logo_hq.jpg">
 
 # :zap: Challenge Week 11 Xmas
 
@@ -39,4 +39,4 @@ https://sonarcloud.io/summary/overall?id=patifusa-20_202212-W11-xmas-patricia-ru
 
 ## Tecnologías usadas
 
-![Logos of used technologies](/dist/assets/tech_logos_v2.jpg)
+![Logos of used technologies](/public/assets/tech_logos_v2.jpg)
