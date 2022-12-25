@@ -1,11 +1,8 @@
-import { MenuItems } from "../../types/menu.item";
-import { Menu } from "../menu/menu";
-
-export function Header({ items }: { items: MenuItems }) {
+export function Header({ children }: { children: JSX.Element }) {
     return (
-        <header>
-            <h1>ROBOTS</h1>
-            <Menu items={items}></Menu>
+        <header aria-label="title">
+            <h1>Challenge Week 11 Xmas</h1>
+            {children}
         </header>
     );
 }

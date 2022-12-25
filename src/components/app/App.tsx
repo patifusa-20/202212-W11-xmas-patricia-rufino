@@ -1,7 +1,7 @@
 import React from "react";
 import { MenuItems } from "../../types/menu.item";
-import { Footer } from "../footer/footer";
-import { Header } from "../header/header";
+import { Layout } from "../layout/layout";
+import { AppRoutes } from "../routes/app.routes";
 import "./App.css";
 
 function App() {
@@ -11,10 +11,11 @@ function App() {
         { path: "/favourites", label: "Favourites" },
     ];
     return (
-        <div className="App">
-            <Header items={items}></Header>
-            <Footer></Footer>
-        </div>
+        <>
+            <Layout items={items}>
+                <AppRoutes items={items}></AppRoutes>
+            </Layout>
+        </>
     );
 }
 
