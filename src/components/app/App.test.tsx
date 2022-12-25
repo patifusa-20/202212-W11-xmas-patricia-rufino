@@ -4,6 +4,6 @@ import App from "./App";
 
 test("renders challenge link", () => {
     render(<App />);
-    const element = screen.getByText(/challenge/i);
+    const element = screen.getByText(/robots/i);
     expect(element).toBeInTheDocument();
 });
