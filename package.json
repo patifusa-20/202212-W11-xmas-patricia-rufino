@@ -10,6 +10,8 @@
         "@types/node": "^16.18.10",
         "@types/react": "^18.0.26",
         "@types/react-dom": "^18.0.9",
+        "i": "^0.3.7",
+        "json-server": "^0.17.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-router-dom": "^6.6.0",
@@ -24,7 +26,8 @@
         "eject": "react-scripts eject",
         "test:all": "react-scripts test --watchAll --collect-coverage",
         "test:prod": "react-scripts test --watchAll --collect-coverage --watchAll=false",
-        "lint": "eslint ."
+        "lint": "eslint .",
+        "server": "json-server --watch ./server/db.json"
     },
     "eslintConfig": {
         "extends": [
