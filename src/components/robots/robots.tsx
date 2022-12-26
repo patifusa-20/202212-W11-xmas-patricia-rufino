@@ -35,7 +35,13 @@ export function Robots() {
             <Add handleAdd={handleAdd}></Add>
             <ul>
                 {robots.map((item) => {
-                    return <Robot key={item.id} item={item}></Robot>;
+                    return (
+                        <Robot
+                            key={item.id}
+                            item={item}
+                            handleDelete={handleDelete}
+                        ></Robot>
+                    );
                 })}
             </ul>
         </>
