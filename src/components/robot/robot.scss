@@ -1,3 +1,17 @@
-li {
+.robot-item {
+    background-color: rgb(196, 219, 223);
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.14);
+    border-radius: 4%;
+    text-align: center;
+    max-width: 200px;
+    p {
+        font-family: "Prosto One", cursive;
+        color: #051a3a;
+        text-transform: capitalize;
+        font-size: 1.2rem;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
 }

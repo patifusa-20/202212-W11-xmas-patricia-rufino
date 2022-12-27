@@ -3,6 +3,7 @@ import { initializeROBOTS } from "../../mocks/robots";
 import { RobotType } from "../../model/robot.model";
 import { Add } from "../robot.add/add";
 import { Robot } from "../robot/robot";
+import "./robots.scss";
 
 export function Robots() {
     const items = initializeROBOTS();
@@ -33,7 +34,7 @@ export function Robots() {
     return (
         <>
             <Add handleAdd={handleAdd}></Add>
-            <ul>
+            <ul className="robots-list">
                 {robots.map((item) => {
                     return (
                         <Robot

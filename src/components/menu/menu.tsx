@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { MenuItems } from "../../types/menu.item";
+import "./menu.scss";
 export function Menu({ items }: { items: MenuItems }) {
     return (
         <nav className="menu">

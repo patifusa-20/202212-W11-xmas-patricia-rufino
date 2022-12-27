@@ -12,11 +12,20 @@ export function Robot({
         handleDelete(item.id);
     };
     return (
-        <li>
+        <li className="robot-item">
+            <button onClick={handleClick}>
+                <span className="material-symbols-outlined">cancel</span>
+            </button>
             <img src={item.image} alt={item.robotName}></img>
             <p>{item.robotName}</p>
-            <button>Favourite</button>
-            <button onClick={handleClick}>Delete</button>
+            <button>
+                <span className="material-symbols-outlined">refresh</span>
+                Edit
+            </button>
+            <button>
+                <span className="material-symbols-outlined">heart_plus</span>
+                Favourite
+            </button>
         </li>
     );
 }

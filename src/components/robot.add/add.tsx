@@ -1,5 +1,6 @@
 import { SyntheticEvent, useState } from "react";
 import { Robot, RobotType } from "../../model/robot.model";
+import "./add.scss";
 
 export function Add({ handleAdd }: { handleAdd: (item: RobotType) => void }) {
     const initialFormData: Partial<RobotType> = {
@@ -43,7 +44,12 @@ export function Add({ handleAdd }: { handleAdd: (item: RobotType) => void }) {
                     />
                 </div>
                 <div>
-                    <button type="submit">Add</button>
+                    <button type="submit">
+                        <span className="material-symbols-outlined">
+                            add_circle
+                        </span>
+                        Add
+                    </button>
                 </div>
             </form>
         </section>

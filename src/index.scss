@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: azure;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    min-height: 40px;
+    padding: 1rem 1.2rem 1rem 1rem;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+input[type="text"] {
+    border: none;
+    min-height: 40px;
+    padding: 1rem;
+    font-family: "Lato", sans-serif;
+}
+
+label {
+    display: block;
+    text-align: left;
+}
