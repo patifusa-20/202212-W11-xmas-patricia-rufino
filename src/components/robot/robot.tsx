@@ -1,4 +1,5 @@
 import { RobotType } from "../../model/robot.model";
+import "./robot.scss";
 
 export function Robot({
     item,
