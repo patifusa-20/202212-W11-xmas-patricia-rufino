@@ -11,16 +11,6 @@
             "creation": "27/12/2022, 19:03:38"
         },
         {
-            "robotName": "ferguson",
-            "image": "https://robohash.org/ferguson.png",
-            "velocity": "3",
-            "resistence": "8",
-            "creator": "Mario",
-            "id": "381881",
-            "isFavourite": false,
-            "creation": "27/12/2022, 19:04:08"
-        },
-        {
             "robotName": "Clotilde",
             "image": "https://robohash.org/Clotilde.png",
             "velocity": "3",
