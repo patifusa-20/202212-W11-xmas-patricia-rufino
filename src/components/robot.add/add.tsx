@@ -21,7 +21,10 @@ export function Add({ handleAdd }: { handleAdd: (item: RobotType) => void }) {
         handleAdd(
             new Robot(
                 formData.robotName as string,
-                formData.image ? formData.image : ""
+                formData.image ? formData.image : "",
+                formData.velocity as string,
+                formData.resistence as string,
+                formData.creator as string
             )
         );
         setFormData(initialFormData);
@@ -39,6 +42,42 @@ export function Add({ handleAdd }: { handleAdd: (item: RobotType) => void }) {
                         id="robotName"
                         placeholder="Write a name"
                         value={formData.robotName}
+                        onInput={handleInput}
+                        required
+                    />
+                </div>
+                <div>
+                    <label htmlFor="velocity">Velocity</label>
+                    <input
+                        type="text"
+                        name="velocity"
+                        id="velocity"
+                        placeholder="Write a name"
+                        value={formData.velocity}
+                        onInput={handleInput}
+                        required
+                    />
+                </div>
+                <div>
+                    <label htmlFor="resistence">Resistence</label>
+                    <input
+                        type="text"
+                        name="resistence"
+                        id="resistence"
+                        placeholder="Write a name"
+                        value={formData.resistence}
+                        onInput={handleInput}
+                        required
+                    />
+                </div>
+                <div>
+                    <label htmlFor="creator">Creator</label>
+                    <input
+                        type="text"
+                        name="creator"
+                        id="creator"
+                        placeholder="Write your name"
+                        value={formData.creator}
                         onInput={handleInput}
                         required
                     />
