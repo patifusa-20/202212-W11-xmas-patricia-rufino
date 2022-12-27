@@ -1,3 +1,10 @@
+import { RobotsFav } from "../../components/robots.favourites/favourites";
+
 export function FavouritesPage() {
-    return <h2>Favourites</h2>;
+    return (
+        <>
+            <h2>Robots</h2>
+            <RobotsFav></RobotsFav>
+        </>
+    );
 }
