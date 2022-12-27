@@ -1,5 +1,6 @@
 import { SyntheticEvent, useState } from "react";
 import { Robot, RobotType } from "../../model/robot.model";
+import "./add.scss";
 
 export function Add({ handleAdd }: { handleAdd: (item: RobotType) => void }) {
     const initialFormData: Partial<RobotType> = {
@@ -20,7 +21,10 @@ export function Add({ handleAdd }: { handleAdd: (item: RobotType) => void }) {
         handleAdd(
             new Robot(
                 formData.robotName as string,
-                formData.image ? formData.image : ""
+                formData.image ? formData.image : "",
+                formData.velocity as string,
+                formData.resistence as string,
+                formData.creator as string
             )
         );
         setFormData(initialFormData);
@@ -43,7 +47,48 @@ export function Add({ handleAdd }: { handleAdd: (item: RobotType) => void }) {
                     />
                 </div>
                 <div>
-                    <button type="submit">Add</button>
+                    <label htmlFor="velocity">Velocity</label>
+                    <input
+                        type="text"
+                        name="velocity"
+                        id="velocity"
+                        placeholder="Write a name"
+                        value={formData.velocity}
+                        onInput={handleInput}
+                        required
+                    />
+                </div>
+                <div>
+                    <label htmlFor="resistence">Resistence</label>
+                    <input
+                        type="text"
+                        name="resistence"
+                        id="resistence"
+                        placeholder="Write a name"
+                        value={formData.resistence}
+                        onInput={handleInput}
+                        required
+                    />
+                </div>
+                <div>
+                    <label htmlFor="creator">Creator</label>
+                    <input
+                        type="text"
+                        name="creator"
+                        id="creator"
+                        placeholder="Write your name"
+                        value={formData.creator}
+                        onInput={handleInput}
+                        required
+                    />
+                </div>
+                <div>
+                    <button type="submit">
+                        <span className="material-symbols-outlined">
+                            add_circle
+                        </span>
+                        Add
+                    </button>
                 </div>
             </form>
         </section>

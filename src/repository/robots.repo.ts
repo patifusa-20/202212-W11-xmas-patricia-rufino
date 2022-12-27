@@ -1,4 +1,4 @@
-import { Robot, RobotDetailsType } from "../model/robot.model.js";
+import { Robot, RobotType } from "../model/robot.model.js";
 import { Repository } from "./repo.js";
 
 export class RobotsRepo implements Repository<Robot> {
@@ -15,7 +15,7 @@ export class RobotsRepo implements Repository<Robot> {
         });
     }
 
-    create(payload: Partial<RobotDetailsType>, url: string) {
+    create(payload: Partial<RobotType>, url: string) {
         return fetch(url, {
             method: "POST",
             body: JSON.stringify(payload),

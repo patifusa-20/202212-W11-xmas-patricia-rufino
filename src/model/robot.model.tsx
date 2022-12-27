@@ -3,13 +3,10 @@ export type RobotType = {
     robotName: string;
     image: string;
     isFavourite: boolean;
-};
-
-export type RobotDetailsType = {
-    robotName: string;
-    image: string;
-    height: string;
-    material: string;
+    velocity: string;
+    resistence: string;
+    creation: string;
+    creator: string;
 };
 
 export class Robot implements RobotType {
@@ -18,10 +15,22 @@ export class Robot implements RobotType {
         window.crypto?.getRandomValues(aNumbers);
         return ("000000" + aNumbers[0]).slice(-6);
     }
+    static generateDate() {
+        const currentDate = new Date();
+        return currentDate.toLocaleString();
+    }
     id: string;
     isFavourite: boolean;
-    constructor(public robotName: string, public image: string) {
+    creation: string;
+    constructor(
+        public robotName: string,
+        public image: string,
+        public velocity: string,
+        public resistence: string,
+        public creator: string
+    ) {
         this.id = Robot.generateId();
         this.isFavourite = false;
+        this.creation = Robot.generateDate();
     }
 }
