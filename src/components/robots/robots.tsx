@@ -1,35 +1,42 @@
-import { useCallback, useState } from "react";
-import { initializeROBOTS } from "../../mocks/robots";
+import { useCallback, useState, useEffect } from "react";
 import { RobotType } from "../../model/robot.model";
+import { RobotsRepo } from "../../repository/robots.repo";
 import { Add } from "../robot.add/add";
 import { Robot } from "../robot/robot";
 import "./robots.scss";
 
 export function Robots() {
-    const items = initializeROBOTS();
-    const initialState: Array<RobotType> = items;
+    const repo = new RobotsRepo();
+    const initialState: Array<RobotType> = [];
 
     const [robots, setRobots] = useState(initialState);
 
-    // const handleLoad = useCallback(async () => {
-    //     const data = await getRobots();
-    //     setRobots(data);
-    // }, []);
-
-    const handleAdd = function (robot: RobotType) {
-        setRobots([...robots, robot]);
+    const handleLoad = async () => {
+        const data = await repo.load();
+        setRobots(data);
     };
 
-    const handleUpdate = function (robot: Partial<RobotType>) {
+    useEffect(() => {
+        handleLoad();
+    }, []);
+
+    const handleAdd = async function (robot: RobotType) {
+        setRobots([...robots, robot]);
+        await repo.create(robot);
+    };
+
+    const handleUpdate = async function (robot: Partial<RobotType>) {
         setRobots(
             robots.map((item) =>
                 item.id === robot.id ? { ...item, ...robot } : item
             )
         );
+        await repo.update(robot);
     };
 
-    const handleDelete = function (id: RobotType["id"]) {
+    const handleDelete = async function (id: RobotType["id"]) {
         setRobots(robots.filter((item) => item.id !== id));
+        await repo.delete(id);
     };
     return (
         <>

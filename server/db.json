@@ -1,26 +1,51 @@
 {
-    "robots": [
-        {
-            "id": 1,
-            "name": "Peonic",
-            "image": "https://robohash.org/peonic.png"
-        }
-    ],
-    "posts": [
-        {
-            "id": 1,
-            "title": "json-server",
-            "author": "typicode"
-        }
-    ],
-    "comments": [
-        {
-            "id": 1,
-            "body": "some comment",
-            "postId": 1
-        }
-    ],
-    "profile": {
-        "name": "typicode"
+  "robotsData": [
+    {
+      "robotName": "juleo",
+      "image": "https://robohash.org/juleo.png",
+      "velocity": "6",
+      "resistence": "5",
+      "creator": "patri",
+      "id": "127714",
+      "isFavourite": false,
+      "creation": "27/12/2022, 19:03:38"
+    },
+    {
+      "robotName": "ferguson",
+      "image": "https://robohash.org/ferguson.png",
+      "velocity": "3",
+      "resistence": "8",
+      "creator": "Mario",
+      "id": "381881",
+      "isFavourite": false,
+      "creation": "27/12/2022, 19:04:08"
+    },
+    {
+      "robotName": "Clotilde",
+      "image": "https://robohash.org/Clotilde.png",
+      "velocity": "3",
+      "resistence": "2",
+      "creator": "Carla",
+      "id": "509134",
+      "isFavourite": false,
+      "creation": "27/12/2022, 19:10:26"
     }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }

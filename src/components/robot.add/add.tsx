@@ -6,6 +6,9 @@ export function Add({ handleAdd }: { handleAdd: (item: RobotType) => void }) {
     const initialFormData: Partial<RobotType> = {
         robotName: "",
         image: "",
+        velocity: "",
+        resistence: "",
+        creator: "",
     };
 
     const [formData, setFormData] = useState(initialFormData);
@@ -52,7 +55,7 @@ export function Add({ handleAdd }: { handleAdd: (item: RobotType) => void }) {
                         type="text"
                         name="velocity"
                         id="velocity"
-                        placeholder="Write a name"
+                        placeholder="Write a velocity"
                         value={formData.velocity}
                         onInput={handleInput}
                         required
@@ -64,7 +67,7 @@ export function Add({ handleAdd }: { handleAdd: (item: RobotType) => void }) {
                         type="text"
                         name="resistence"
                         id="resistence"
-                        placeholder="Write a name"
+                        placeholder="Write a resistence"
                         value={formData.resistence}
                         onInput={handleInput}
                         required
