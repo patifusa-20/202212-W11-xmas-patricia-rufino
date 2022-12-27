@@ -1,4 +1,4 @@
-import { useCallback, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { RobotType } from "../../model/robot.model";
 import { RobotsRepo } from "../../repository/robots.repo";
 import { Add } from "../robot.add/add";
@@ -38,6 +38,17 @@ export function Robots() {
         setRobots(robots.filter((item) => item.id !== id));
         await repo.delete(id);
     };
+
+    const handleFavourite = async function (robot: Partial<RobotType>) {
+        robot.isFavourite = !robot.isFavourite;
+        setRobots(
+            robots.map((item) =>
+                item.id === robot.id ? { ...item, ...robot } : item
+            )
+        );
+        await repo.update(robot);
+    };
+
     return (
         <>
             <Add handleAdd={handleAdd}></Add>
@@ -49,6 +60,7 @@ export function Robots() {
                             item={item}
                             handleUpdate={handleUpdate}
                             handleDelete={handleDelete}
+                            handleFavourite={handleFavourite}
                         ></Robot>
                     );
                 })}

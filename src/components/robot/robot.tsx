@@ -5,16 +5,21 @@ export function Robot({
     item,
     handleUpdate,
     handleDelete,
+    handleFavourite,
 }: {
     item: RobotType;
     handleUpdate: (robot: Partial<RobotType>) => void;
     handleDelete: (id: RobotType["id"]) => void;
+    handleFavourite: (robot: Partial<RobotType>) => void;
 }) {
     const handleClick = () => {
         handleDelete(item.id);
     };
     const handleUpdateClick = () => {
         handleUpdate(item);
+    };
+    const handleFavouriteClick = () => {
+        handleFavourite(item);
     };
     return (
         <li className="robot-item">
@@ -42,10 +47,17 @@ export function Robot({
                     <span className="material-symbols-outlined">refresh</span>
                     Edit
                 </button>
-                <button>
-                    <span className="material-symbols-outlined">
-                        heart_plus
-                    </span>
+
+                <button onClick={handleFavouriteClick}>
+                    {item.isFavourite ? (
+                        <span className="material-symbols-outlined">
+                            heart_minus
+                        </span>
+                    ) : (
+                        <span className="material-symbols-outlined">
+                            heart_plus
+                        </span>
+                    )}
                 </button>
             </div>
         </li>
