@@ -13,7 +13,7 @@ export function Robot({
     };
     return (
         <li className="robot-item">
-            <button onClick={handleClick}>
+            <button className="remove-btn" onClick={handleClick}>
                 <span className="material-symbols-outlined">cancel</span>
             </button>
             <img src={item.image} alt={item.robotName}></img>
@@ -32,13 +32,17 @@ export function Robot({
                     Creator: <span>{item.creator}</span>
                 </p>
             </div>
-            <button>
-                <span className="material-symbols-outlined">refresh</span>
-                Edit
-            </button>
-            <button>
-                <span className="material-symbols-outlined">heart_plus</span>
-            </button>
+            <div className="buttons-group">
+                <button>
+                    <span className="material-symbols-outlined">refresh</span>
+                    Edit
+                </button>
+                <button>
+                    <span className="material-symbols-outlined">
+                        heart_plus
+                    </span>
+                </button>
+            </div>
         </li>
     );
 }
