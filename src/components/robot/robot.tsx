@@ -44,8 +44,13 @@ export function Robot({
             </div>
             <div className="buttons-group">
                 <button onClick={handleUpdateClick}>
-                    <span className="material-symbols-outlined">refresh</span>
-                    Edit
+                    <span className="material-symbols-outlined">
+                        edit_square
+                    </span>
+                </button>
+
+                <button>
+                    <span className="material-symbols-outlined">smart_toy</span>
                 </button>
 
                 <button onClick={handleFavouriteClick}>
