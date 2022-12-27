@@ -40,6 +40,7 @@ export function Robots() {
                         <Robot
                             key={item.id}
                             item={item}
+                            handleUpdate={handleUpdate}
                             handleDelete={handleDelete}
                         ></Robot>
                     );

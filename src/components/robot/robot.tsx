@@ -3,13 +3,18 @@ import "./robot.scss";
 
 export function Robot({
     item,
+    handleUpdate,
     handleDelete,
 }: {
     item: RobotType;
+    handleUpdate: (robot: Partial<RobotType>) => void;
     handleDelete: (id: RobotType["id"]) => void;
 }) {
     const handleClick = () => {
         handleDelete(item.id);
+    };
+    const handleUpdateClick = () => {
+        handleUpdate(item);
     };
     return (
         <li className="robot-item">
@@ -33,7 +38,7 @@ export function Robot({
                 </p>
             </div>
             <div className="buttons-group">
-                <button>
+                <button onClick={handleUpdateClick}>
                     <span className="material-symbols-outlined">refresh</span>
                     Edit
                 </button>
