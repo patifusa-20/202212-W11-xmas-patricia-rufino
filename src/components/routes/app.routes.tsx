@@ -7,8 +7,14 @@ import { MenuItems } from "../../types/menu.item";
 export function AppRoutes({ items }: { items: MenuItems }) {
     return (
         <Routes>
-            <Route path={""} element={<HomePage></HomePage>}></Route>
-            <Route path={items[0].path} element={<HomePage></HomePage>}></Route>
+            <Route
+                path={""}
+                element={<HomePage items={items}></HomePage>}
+            ></Route>
+            <Route
+                path={items[0].path}
+                element={<HomePage items={items}></HomePage>}
+            ></Route>
             <Route
                 path={items[1].path}
                 element={<RobotsPage></RobotsPage>}

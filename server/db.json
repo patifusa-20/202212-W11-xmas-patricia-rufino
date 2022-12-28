@@ -1,131 +1,121 @@
 {
-    "robotsData": [
-        {
-            "robotName": "juleo",
-            "image": "https://robohash.org/juleo.png",
-            "velocity": "6",
-            "resistence": "5",
-            "creator": "patri",
-            "id": "127714",
-            "isFavourite": false,
-            "creation": "27/12/2022, 19:03:38"
-        },
-        {
-            "robotName": "Clotilde",
-            "image": "https://robohash.org/Clotilde.png",
-            "velocity": "3",
-            "resistence": "2",
-            "creator": "Carla",
-            "id": "509134",
-            "isFavourite": true,
-            "creation": "27/12/2022, 19:10:26"
-        },
-        {
-            "robotName": "benjamon",
-            "image": "https://robohash.org/benjamon.png",
-            "velocity": "2",
-            "resistence": "6",
-            "creator": "Patri",
-            "id": "239904",
-            "isFavourite": true,
-            "creation": "27/12/2022, 20:22:20"
-        },
-        {
-            "robotName": "rocatronic",
-            "image": "https://robohash.org/rocatronic.png",
-            "velocity": "9",
-            "resistence": "12",
-            "creator": "Patri",
-            "id": "090852",
-            "isFavourite": false,
-            "creation": "27/12/2022, 20:22:36"
-        },
-        {
-            "robotName": "Gamberrus",
-            "image": "https://robohash.org/Gamberrus.png",
-            "velocity": "9",
-            "resistence": "23",
-            "creator": "Patri",
-            "id": "819688",
-            "isFavourite": false,
-            "creation": "27/12/2022, 20:23:15"
-        },
-        {
-            "robotName": "Boltenic",
-            "image": "https://robohash.org/Boltenic.png",
-            "velocity": "9",
-            "resistence": "3",
-            "creator": "Patri",
-            "id": "351554",
-            "isFavourite": true,
-            "creation": "27/12/2022, 20:23:37"
-        },
-        {
-            "robotName": "Hernek",
-            "image": "https://robohash.org/Hernek.png",
-            "velocity": "9",
-            "resistence": "3",
-            "creator": "Patri",
-            "id": "155932",
-            "isFavourite": false,
-            "creation": "27/12/2022, 20:23:56"
-        },
-        {
-            "robotName": "Artos",
-            "image": "https://robohash.org/Artos.png",
-            "velocity": "9",
-            "resistence": "2",
-            "creator": "Patri",
-            "id": "432992",
-            "isFavourite": false,
-            "creation": "27/12/2022, 20:24:25"
-        },
-        {
-            "robotName": "mariana",
-            "image": "https://robohash.org/mariana.png",
-            "velocity": "6",
-            "resistence": "10",
-            "creator": "patri",
-            "id": "836367",
-            "isFavourite": true,
-            "creation": "27/12/2022, 20:24:40"
-        },
-        {
-            "robotName": "Federic",
-            "image": "https://robohash.org/Federic.png",
-            "velocity": "9",
-            "resistence": "9",
-            "creator": "Pastricia",
-            "id": "547723",
-            "isFavourite": false,
-            "creation": "27/12/2022, 20:25:01"
-        },
-        {
-            "robotName": "elenok",
-            "image": "https://robohash.org/elenok.png",
-            "velocity": "3",
-            "resistence": "2",
-            "creator": "Patricia",
-            "id": "224567",
-            "isFavourite": false,
-            "creation": "27/12/2022, 20:25:23"
-        }
-    ],
-    "posts": [
-        {
-            "id": 1,
-            "title": "json-server",
-            "author": "typicode"
-        }
-    ],
-    "comments": [
-        {
-            "id": 1,
-            "body": "some comment",
-            "postId": 1
-        }
-    ],
-    "profile": {
-        "name": "typicode"
+  "robotsData": [
+    {
+      "robotName": "Clotilde",
+      "image": "https://robohash.org/Clotilde.png",
+      "velocity": "3",
+      "resistence": "2",
+      "creator": "Carla",
+      "id": "509134",
+      "isFavourite": true,
+      "creation": "27/12/2022, 19:10:26"
+    },
+    {
+      "robotName": "benjamon",
+      "image": "https://robohash.org/benjamon.png",
+      "velocity": "2",
+      "resistence": "6",
+      "creator": "Patri",
+      "id": "239904",
+      "isFavourite": true,
+      "creation": "27/12/2022, 20:22:20"
+    },
+    {
+      "robotName": "rocatronic",
+      "image": "https://robohash.org/rocatronic.png",
+      "velocity": "9",
+      "resistence": "12",
+      "creator": "Patri",
+      "id": "090852",
+      "isFavourite": true,
+      "creation": "27/12/2022, 20:22:36"
+    },
+    {
+      "robotName": "Gamberrus",
+      "image": "https://robohash.org/Gamberrus.png",
+      "velocity": "9",
+      "resistence": "23",
+      "creator": "Patri",
+      "id": "819688",
+      "isFavourite": false,
+      "creation": "27/12/2022, 20:23:15"
+    },
+    {
+      "robotName": "Boltenic",
+      "image": "https://robohash.org/Boltenic.png",
+      "velocity": "9",
+      "resistence": "3",
+      "creator": "Patri",
+      "id": "351554",
+      "isFavourite": true,
+      "creation": "27/12/2022, 20:23:37"
+    },
+    {
+      "robotName": "Hernek",
+      "image": "https://robohash.org/Hernek.png",
+      "velocity": "9",
+      "resistence": "3",
+      "creator": "Patri",
+      "id": "155932",
+      "isFavourite": false,
+      "creation": "27/12/2022, 20:23:56"
+    },
+    {
+      "robotName": "Artos",
+      "image": "https://robohash.org/Artos.png",
+      "velocity": "9",
+      "resistence": "2",
+      "creator": "Patri",
+      "id": "432992",
+      "isFavourite": false,
+      "creation": "27/12/2022, 20:24:25"
+    },
+    {
+      "robotName": "mariana",
+      "image": "https://robohash.org/mariana.png",
+      "velocity": "6",
+      "resistence": "10",
+      "creator": "patri",
+      "id": "836367",
+      "isFavourite": true,
+      "creation": "27/12/2022, 20:24:40"
+    },
+    {
+      "robotName": "Federic",
+      "image": "https://robohash.org/Federic.png",
+      "velocity": "9",
+      "resistence": "9",
+      "creator": "Pastricia",
+      "id": "547723",
+      "isFavourite": false,
+      "creation": "27/12/2022, 20:25:01"
+    },
+    {
+      "robotName": "elenok",
+      "image": "https://robohash.org/elenok.png",
+      "velocity": "3",
+      "resistence": "2",
+      "creator": "Patricia",
+      "id": "224567",
+      "isFavourite": false,
+      "creation": "27/12/2022, 20:25:23"
     }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
