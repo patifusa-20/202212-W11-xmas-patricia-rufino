@@ -1,16 +1,6 @@
 {
     "robotsData": [
         {
-            "robotName": "juleo",
-            "image": "https://robohash.org/juleo.png",
-            "velocity": "6",
-            "resistence": "5",
-            "creator": "patri",
-            "id": "127714",
-            "isFavourite": false,
-            "creation": "27/12/2022, 19:03:38"
-        },
-        {
             "robotName": "Clotilde",
             "image": "https://robohash.org/Clotilde.png",
             "velocity": "3",
@@ -37,7 +27,7 @@
             "resistence": "12",
             "creator": "Patri",
             "id": "090852",
-            "isFavourite": false,
+            "isFavourite": true,
             "creation": "27/12/2022, 20:22:36"
         },
         {
