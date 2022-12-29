@@ -21,10 +21,10 @@ export function HomePage({ items }: { items: MenuItems }) {
     return (
         <>
             <h2>Home</h2>
-            <p>
-                There are <span>{robots.length}</span> robots available
-            </p>
-            <Link to={items[1].path}>Explorer {items[1].label}</Link>
+            <p>{robots.length}</p>
+            <p>ROBOTS</p>
+            <p>available</p>
+            <Link to={items[1].path}>Explorer</Link>
         </>
     );
 }
