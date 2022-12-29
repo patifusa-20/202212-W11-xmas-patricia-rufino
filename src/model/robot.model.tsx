@@ -4,7 +4,7 @@ export type RobotType = {
     image: string;
     isFavourite: boolean;
     velocity: string;
-    resistence: string;
+    strength: string;
     creation: string;
     creator: string;
 };
@@ -26,7 +26,7 @@ export class Robot implements RobotType {
         public robotName: string,
         public image: string,
         public velocity: string,
-        public resistence: string,
+        public strength: string,
         public creator: string
     ) {
         this.id = Robot.generateId();

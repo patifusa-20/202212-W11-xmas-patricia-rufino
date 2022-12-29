@@ -7,7 +7,7 @@ export function Add({ handleAdd }: { handleAdd: (item: RobotType) => void }) {
         robotName: "",
         image: "",
         velocity: "",
-        resistence: "",
+        strength: "",
         creator: "",
     };
 
@@ -26,7 +26,7 @@ export function Add({ handleAdd }: { handleAdd: (item: RobotType) => void }) {
                 formData.robotName as string,
                 formData.image ? formData.image : "",
                 formData.velocity as string,
-                formData.resistence as string,
+                formData.strength as string,
                 formData.creator as string
             )
         );
@@ -62,13 +62,13 @@ export function Add({ handleAdd }: { handleAdd: (item: RobotType) => void }) {
                     />
                 </div>
                 <div>
-                    <label htmlFor="resistence">Resistence</label>
+                    <label htmlFor="strength">Strength</label>
                     <input
                         type="text"
-                        name="resistence"
-                        id="resistence"
-                        placeholder="Write a resistence"
-                        value={formData.resistence}
+                        name="strength"
+                        id="strength"
+                        placeholder="Write a strength"
+                        value={formData.strength}
                         onInput={handleInput}
                         required
                     />

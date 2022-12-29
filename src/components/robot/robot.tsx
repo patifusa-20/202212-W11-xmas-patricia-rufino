@@ -33,7 +33,7 @@ export function Robot({
                     Velocity: <span>{item.velocity}</span>
                 </p>
                 <p>
-                    Resistence: <span>{item.resistence}</span>
+                    Strength: <span>{item.strength}</span>
                 </p>
                 <p>
                     Creation date: <span>{item.creation}</span>
