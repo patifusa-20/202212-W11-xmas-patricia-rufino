@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { saveRobots } from "../../data/store.robots";
 import { useRobots } from "../../hooks/use.robots";
 import { MenuItems } from "../../types/menu.item";
 import { Layout } from "../layout/layout";
@@ -24,6 +25,12 @@ function App() {
     useEffect(() => {
         handleLoad();
     }, [handleLoad]);
+
+    useEffect(() => {
+        if (robots.length) {
+            saveRobots(robots);
+        }
+    }, [robots]);
 
     return (
         <>

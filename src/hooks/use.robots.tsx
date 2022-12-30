@@ -1,16 +1,17 @@
 import { useCallback, useState } from "react";
+import { getRobots } from "../data/store.robots";
 import { RobotType } from "../model/robot.model";
 import { RobotsRepo } from "../repository/robots.repo";
 
 export function useRobots() {
     const repo = new RobotsRepo();
+    const data = getRobots();
     const initialState: Array<RobotType> = [];
 
     const [robots, setRobots] = useState(initialState);
 
     const handleLoad = useCallback(async () => {
-        const data = await repo.load();
-        setRobots(data);
+        setRobots(await data);
     }, []);
 
     const handleAdd = async function (robot: RobotType) {
