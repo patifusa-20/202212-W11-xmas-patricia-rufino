@@ -7,7 +7,7 @@
             "strength": "2",
             "creator": "Carla",
             "id": "509134",
-            "isFavourite": true,
+            "isFavourite": false,
             "creation": "27/12/2022, 19:10:26"
         },
         {
@@ -19,26 +19,6 @@
             "id": "239904",
             "isFavourite": true,
             "creation": "27/12/2022, 20:22:20"
-        },
-        {
-            "robotName": "rocatronic",
-            "image": "https://robohash.org/rocatronic.png",
-            "velocity": "9",
-            "strength": "12",
-            "creator": "Patri",
-            "id": "090852",
-            "isFavourite": true,
-            "creation": "27/12/2022, 20:22:36"
-        },
-        {
-            "robotName": "Gamberrus",
-            "image": "https://robohash.org/Gamberrus.png",
-            "velocity": "9",
-            "strength": "23",
-            "creator": "Patri",
-            "id": "819688",
-            "isFavourite": true,
-            "creation": "27/12/2022, 20:23:15"
         },
         {
             "robotName": "Boltenic",
@@ -71,16 +51,6 @@
             "creation": "27/12/2022, 20:24:25"
         },
         {
-            "robotName": "mariana",
-            "image": "https://robohash.org/mariana.png",
-            "velocity": "6",
-            "strength": "10",
-            "creator": "patri",
-            "id": "836367",
-            "isFavourite": true,
-            "creation": "27/12/2022, 20:24:40"
-        },
-        {
             "robotName": "elenok",
             "image": "https://robohash.org/elenok.png",
             "velocity": "3",
@@ -97,7 +67,7 @@
             "strength": "2",
             "creator": "Patri",
             "id": "866059",
-            "isFavourite": false,
+            "isFavourite": true,
             "creation": "29/12/2022, 15:51:22"
         },
         {
@@ -109,6 +79,16 @@
             "id": "660262",
             "isFavourite": false,
             "creation": "30/12/2022, 8:05:48"
+        },
+        {
+            "robotName": "Marina",
+            "image": "https://robohash.org/Marina.png",
+            "velocity": "4",
+            "strength": "3",
+            "creator": "Patricia",
+            "id": "141938",
+            "isFavourite": false,
+            "creation": "30/12/2022, 9:03:46"
         }
     ],
     "posts": [
