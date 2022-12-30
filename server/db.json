@@ -89,6 +89,16 @@
             "id": "141938",
             "isFavourite": false,
             "creation": "30/12/2022, 9:03:46"
+        },
+        {
+            "robotName": "Gargamel",
+            "image": "https://robohash.org/Gargamel.png",
+            "velocity": "2",
+            "strength": "3",
+            "creator": "Patricia",
+            "id": "354492",
+            "isFavourite": false,
+            "creation": "30/12/2022, 9:36:05"
         }
     ],
     "posts": [
