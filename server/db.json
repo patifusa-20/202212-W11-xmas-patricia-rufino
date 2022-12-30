@@ -37,7 +37,7 @@
             "strength": "23",
             "creator": "Patri",
             "id": "819688",
-            "isFavourite": false,
+            "isFavourite": true,
             "creation": "27/12/2022, 20:23:15"
         },
         {
@@ -81,16 +81,6 @@
             "creation": "27/12/2022, 20:24:40"
         },
         {
-            "robotName": "Federic",
-            "image": "https://robohash.org/Federic.png",
-            "velocity": "9",
-            "strength": "9",
-            "creator": "Pastricia",
-            "id": "547723",
-            "isFavourite": false,
-            "creation": "27/12/2022, 20:25:01"
-        },
-        {
             "robotName": "elenok",
             "image": "https://robohash.org/elenok.png",
             "velocity": "3",
@@ -109,6 +99,16 @@
             "id": "866059",
             "isFavourite": false,
             "creation": "29/12/2022, 15:51:22"
+        },
+        {
+            "robotName": "juleo",
+            "image": "https://robohash.org/juleo.png",
+            "velocity": "2",
+            "strength": "2",
+            "creator": "Patri",
+            "id": "660262",
+            "isFavourite": false,
+            "creation": "30/12/2022, 8:05:48"
         }
     ],
     "posts": [

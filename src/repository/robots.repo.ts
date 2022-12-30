@@ -3,7 +3,7 @@ import { Repository } from "./repo.js";
 
 const invalidIdError = new Error("Invalid ID");
 export class RobotsRepo implements Repository<Robot> {
-    constructor(private url = "http://localhost:3000/robotsData/") {
+    constructor(private url = "http://localhost:3010/robotsData/") {
         //
     }
     async load(): Promise<RobotType[]> {
