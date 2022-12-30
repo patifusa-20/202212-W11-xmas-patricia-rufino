@@ -1,26 +1,20 @@
-import { useEffect } from "react";
-import { useRobots } from "../../hooks/use.robots";
-import { Add } from "../robot.add/add";
+import { RobotType } from "../../model/robot.model";
 import { Robot } from "../robot/robot";
 import "./robots.scss";
 
-export function Robots() {
-    const {
-        robots,
-        handleLoad,
-        handleAdd,
-        handleUpdate,
-        handleDelete,
-        handleFavourite,
-    } = useRobots();
-
-    useEffect(() => {
-        handleLoad();
-    }, [handleLoad]);
-
+export function Robots({
+    robots,
+    handleUpdate,
+    handleDelete,
+    handleFavourite,
+}: {
+    robots: Array<RobotType>;
+    handleUpdate: (robot: Partial<RobotType>) => void;
+    handleDelete: (id: RobotType["id"]) => void;
+    handleFavourite: (robot: Partial<RobotType>) => void;
+}) {
     return (
         <>
-            <Add handleAdd={handleAdd}></Add>
             <ul className="robots-list">
                 {robots.map((item) => {
                     return (
