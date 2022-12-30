@@ -1,10 +1,26 @@
-import { RobotsFav } from "../../components/robots.favourites/favourites";
+import { Robots } from "../../components/robots/robots";
+import { RobotType } from "../../model/robot.model";
 
-export function FavouritesPage() {
+export function FavouritesPage({
+    robots,
+    handleUpdate,
+    handleDelete,
+    handleFavourite,
+}: {
+    robots: Array<RobotType>;
+    handleUpdate: (robot: Partial<RobotType>) => void;
+    handleDelete: (id: RobotType["id"]) => void;
+    handleFavourite: (robot: Partial<RobotType>) => void;
+}) {
     return (
         <>
             <h2>My Favourite Robots</h2>
-            <RobotsFav></RobotsFav>
+            <Robots
+                robots={robots.filter((item) => item.isFavourite)}
+                handleUpdate={handleUpdate}
+                handleDelete={handleDelete}
+                handleFavourite={handleFavourite}
+            ></Robots>
         </>
     );
 }

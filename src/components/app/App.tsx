@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useRobots } from "../../hooks/use.robots";
 import { MenuItems } from "../../types/menu.item";
 import { Layout } from "../layout/layout";
 import { AppRoutes } from "../routes/app.routes";
@@ -10,10 +11,31 @@ function App() {
         { path: "/robots", label: "Robots" },
         { path: "/favourites", label: "Favourites" },
     ];
+
+    const {
+        robots,
+        handleLoad,
+        handleAdd,
+        handleUpdate,
+        handleDelete,
+        handleFavourite,
+    } = useRobots();
+
+    useEffect(() => {
+        handleLoad();
+    }, [handleLoad]);
+
     return (
         <>
             <Layout items={items}>
-                <AppRoutes items={items}></AppRoutes>
+                <AppRoutes
+                    items={items}
+                    robots={robots}
+                    handleAdd={handleAdd}
+                    handleUpdate={handleUpdate}
+                    handleDelete={handleDelete}
+                    handleFavourite={handleFavourite}
+                ></AppRoutes>
             </Layout>
         </>
     );
