@@ -1,53 +1,22 @@
-import { useState, useEffect } from "react";
-import { RobotType } from "../../model/robot.model";
-import { RobotsRepo } from "../../repository/robots.repo";
+import { useEffect } from "react";
+import { useRobots } from "../../hooks/use.robots";
 import { Add } from "../robot.add/add";
 import { Robot } from "../robot/robot";
 import "./robots.scss";
 
 export function Robots() {
-    const repo = new RobotsRepo();
-    const initialState: Array<RobotType> = [];
-
-    const [robots, setRobots] = useState(initialState);
-
-    const handleLoad = async () => {
-        const data = await repo.load();
-        setRobots(data);
-    };
+    const {
+        robots,
+        handleLoad,
+        handleAdd,
+        handleUpdate,
+        handleDelete,
+        handleFavourite,
+    } = useRobots();
 
     useEffect(() => {
         handleLoad();
-    }, []);
-
-    const handleAdd = async function (robot: RobotType) {
-        setRobots([...robots, robot]);
-        await repo.create(robot);
-    };
-
-    const handleUpdate = async function (robot: Partial<RobotType>) {
-        setRobots(
-            robots.map((item) =>
-                item.id === robot.id ? { ...item, ...robot } : item
-            )
-        );
-        await repo.update(robot);
-    };
-
-    const handleDelete = async function (id: RobotType["id"]) {
-        setRobots(robots.filter((item) => item.id !== id));
-        await repo.delete(id);
-    };
-
-    const handleFavourite = async function (robot: Partial<RobotType>) {
-        robot.isFavourite = !robot.isFavourite;
-        setRobots(
-            robots.map((item) =>
-                item.id === robot.id ? { ...item, ...robot } : item
-            )
-        );
-        await repo.update(robot);
-    };
+    }, [handleLoad]);
 
     return (
         <>
