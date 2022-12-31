@@ -1,8 +1,8 @@
-import { Robot, RobotType } from "../model/robot.model.js";
+import { RobotType } from "../model/robot.model.js";
 import { Repository } from "./repo.js";
 
 const invalidIdError = new Error("Invalid ID");
-export class RobotsRepo implements Repository<Robot> {
+export class RobotsRepo implements Repository<RobotType> {
     constructor(private url = "http://localhost:3010/robotsData/") {
         //
     }

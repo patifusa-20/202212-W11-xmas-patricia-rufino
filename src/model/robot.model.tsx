@@ -9,7 +9,7 @@ export type RobotType = {
     creator: string;
 };
 
-export class Robot implements RobotType {
+export class RobotObj implements RobotType {
     static generateId() {
         const aNumbers = new Uint32Array(1);
         window.crypto?.getRandomValues(aNumbers);
@@ -29,8 +29,8 @@ export class Robot implements RobotType {
         public strength: string,
         public creator: string
     ) {
-        this.id = Robot.generateId();
+        this.id = RobotObj.generateId();
         this.isFavourite = false;
-        this.creation = Robot.generateDate();
+        this.creation = RobotObj.generateDate();
     }
 }
