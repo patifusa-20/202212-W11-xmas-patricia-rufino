@@ -1,9 +1,10 @@
 import { useCallback, useState } from "react";
 import { getRobots } from "../data/store.robots";
+import { UseRobots } from "../model/hook.model";
 import { RobotType } from "../model/robot.model";
 import { RobotsRepo } from "../repository/robots.repo";
 
-export function useRobots() {
+export function useRobots(): UseRobots {
     const repo = new RobotsRepo();
     const data = getRobots();
     const initialState: Array<RobotType> = [];
