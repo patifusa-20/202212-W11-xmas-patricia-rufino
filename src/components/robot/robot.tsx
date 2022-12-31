@@ -22,7 +22,7 @@ export function Robot({
         handleFavourite(item);
     };
     return (
-        <li className="robot-item">
+        <li className="robot-item" aria-label="list-item">
             <button className="remove-btn" onClick={handleClick}>
                 <span className="material-symbols-outlined">cancel</span>
             </button>

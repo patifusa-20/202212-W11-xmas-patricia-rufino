@@ -1,5 +1,5 @@
 import { SyntheticEvent, useState } from "react";
-import { Robot, RobotType } from "../../model/robot.model";
+import { RobotObj, RobotType } from "../../model/robot.model";
 import "./add.scss";
 
 export function Add({ handleAdd }: { handleAdd: (item: RobotType) => void }) {
@@ -22,7 +22,7 @@ export function Add({ handleAdd }: { handleAdd: (item: RobotType) => void }) {
         ev.preventDefault();
         formData.image = "https://robohash.org/" + formData.robotName + ".png";
         handleAdd(
-            new Robot(
+            new RobotObj(
                 formData.robotName as string,
                 formData.image ? formData.image : "",
                 formData.velocity as string,
