@@ -5,11 +5,17 @@ export function Menu({ items }: { items: MenuItems }) {
     return (
         <nav className="menu">
             <ul>
-                {items.map((item) => (
-                    <li key={item.label}>
-                        <Link to={item.path}>{item.label}</Link>
-                    </li>
-                ))}
+                {items.map((item) =>
+                    document.location.pathname === item.path ? (
+                        <li key={item.label} className="active">
+                            <Link to={item.path}>{item.label}</Link>
+                        </li>
+                    ) : (
+                        <li key={item.label}>
+                            <Link to={item.path}>{item.label}</Link>
+                        </li>
+                    )
+                )}
             </ul>
         </nav>
     );
