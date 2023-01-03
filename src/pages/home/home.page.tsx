@@ -17,7 +17,11 @@ export function HomePage({
                 <h3>{robots.length}</h3>
                 <h3>ROBOTS</h3>
                 <p>available</p>
-                {/* <img src={robots[0].image} alt={robots[0].robotName} /> */}
+                {robots.length ? (
+                    <img src={robots[0].image} alt={robots[0].robotName} />
+                ) : (
+                    ""
+                )}
                 <Link to={items[1].path}>
                     Explorer{" "}
                     <span className="material-symbols-outlined">
