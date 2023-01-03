@@ -51,10 +51,6 @@ export function Robot({
                     </span>
                 </button>
 
-                <button>
-                    <span className="material-symbols-outlined">smart_toy</span>
-                </button>
-
                 <button onClick={handleFavouriteClick}>
                     {item.isFavourite ? (
                         <span className="material-symbols-outlined">
