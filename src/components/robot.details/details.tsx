@@ -1,23 +1,22 @@
 import { RobotType } from "../../model/robot.model";
 
-export function RobotDetails({ item }: { item: RobotType }) {
+export function RobotDetails({ robot }: { robot: RobotType }) {
     return (
         <>
-            <h2>Details</h2>
-            <img src={item.image} alt={item.robotName}></img>
-            <p>{item.robotName}</p>
+            <h2>{robot.robotName}</h2>
+            <img src={robot.image} alt={robot.robotName}></img>
             <div className="robot-features">
                 <p>
-                    Velocity: <span>{item.velocity}</span>
+                    Velocity: <span>{robot.velocity}</span>
                 </p>
                 <p>
-                    Strength: <span>{item.strength}</span>
+                    Strength: <span>{robot.strength}</span>
                 </p>
                 <p>
-                    Creation date: <span>{item.creation}</span>
+                    Creation date: <span>{robot.creation}</span>
                 </p>
                 <p>
-                    Creator: <span>{item.creator}</span>
+                    Creator: <span>{robot.creator}</span>
                 </p>
             </div>
         </>

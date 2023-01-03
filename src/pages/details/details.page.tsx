@@ -5,9 +5,11 @@ export function DetailsPage({ robots }: { robots: Array<RobotType> }) {
     return (
         <>
             <h2>Details Robot</h2>
-            {robots.filter((element) => {
-                if (element.id === location.search.slice(4)) {
-                    <RobotDetails item={element}></RobotDetails>;
+            {robots.map((item) => {
+                if (item.id === location.search.slice(4)) {
+                    return (
+                        <RobotDetails key={item.id} robot={item}></RobotDetails>
+                    );
                 }
             })}
         </>
