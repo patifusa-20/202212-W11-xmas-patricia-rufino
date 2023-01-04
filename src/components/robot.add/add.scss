@@ -1,7 +1,38 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
 .add-robot {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    $height: 50px;
+    @include flexbox(flex, center, flex-end);
     gap: 1rem;
+    flex-wrap: wrap;
     margin-bottom: 2rem;
+
+    label {
+        margin-bottom: 0.5em;
+        font-size: 0.8rem;
+        letter-spacing: 0.8px;
+    }
+
+    input[type="text"] {
+        height: $height;
+    }
+
+    button {
+        height: $height;
+        background-color: $secondary-color;
+        color: $primary-color;
+        padding-right: 1.2rem;
+        transition: all 0.5s;
+        span {
+            transition: all 0.5s;
+        }
+        &:hover {
+            font-size: 0;
+            padding-right: 0.7rem;
+            span {
+                font-size: 30px;
+            }
+        }
+    }
 }

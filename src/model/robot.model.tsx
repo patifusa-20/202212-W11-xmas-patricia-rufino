@@ -17,7 +17,9 @@ export class RobotObj implements RobotType {
     }
     static generateDate() {
         const currentDate = new Date();
-        return currentDate.toLocaleString();
+        const formatDate = currentDate.toLocaleString();
+        const removeTime = formatDate.split(",");
+        return removeTime[0];
     }
     id: string;
     isFavourite: boolean;
