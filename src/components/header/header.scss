@@ -1,12 +1,14 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #bdf831;
+    @include flexbox(flex, space-between, center);
+    flex-wrap: wrap;
+    background-color: var(--secondary-color);
     padding: 1em 3em;
 
     h1 {
-        font-family: "Prosto One", cursive;
+        font-family: $primary-font;
         font-size: 1.5rem;
     }
 }

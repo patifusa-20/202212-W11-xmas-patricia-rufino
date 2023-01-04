@@ -13,7 +13,7 @@ export function RobotDetails({ robot }: { robot: RobotType }) {
                     Strength: <span>{robot.strength}</span>
                 </p>
                 <p>
-                    Creation date: <span>{robot.creation}</span>
+                    Creation: <span>{robot.creation}</span>
                 </p>
                 <p>
                     Creator: <span>{robot.creator}</span>

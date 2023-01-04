@@ -1,13 +1,21 @@
+@import "./scss/variables.scss";
+@import "./scss/mixins.scss";
+
+:root {
+    --primary-color: #{$primary-color};
+    --secondary-color: #{$secondary-color};
+    --text-color: #{$text-color};
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: "Lato", sans-serif;
+    font-family: $secondary-font;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: azure;
 }
 
 ul {
@@ -18,31 +26,31 @@ ul {
 
 a {
     text-decoration: none;
-    color: azure;
-    background-color: rgba(240, 255, 255, 0.13);
+    color: var(--text-color);
     min-height: 40px;
-    padding: 1rem 1.2rem 1rem 1rem;
-    margin-top: 1rem;
-    display: block;
 }
 
 button {
     border: none;
     min-height: 40px;
     padding: 1rem 1.2rem 1rem 1rem;
-    font-family: "Lato", sans-serif;
-    display: flex;
-    align-items: center;
+    font-family: $secondary-font;
+    @include flexbox(flex, center, center);
     gap: 0.5rem;
-    background-color: rgba(240, 255, 255, 0.13);
-    color: azure;
+    color: var(--text-color);
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="text"]:focus {
     border: none;
-    min-height: 40px;
     padding: 1rem;
-    font-family: "Lato", sans-serif;
+    font-family: $secondary-font;
+    color: $secondary-color;
+    background-color: rgba(240, 255, 255, 0.13);
+}
+
+::placeholder {
+    color: $secondary-color;
 }
 
 label {

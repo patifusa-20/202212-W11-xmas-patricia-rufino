@@ -23,12 +23,9 @@ export function Robot({
     };
     return (
         <li className="robot-item" aria-label="list-item">
-            <button className="remove-btn" onClick={handleClick}>
-                <span className="material-symbols-outlined">cancel</span>
-            </button>
             <a href={"details?id=" + item.id}>
-                <img src={item.image} alt={item.robotName}></img>
                 <p>{item.robotName}</p>
+                <img src={item.image} alt={item.robotName}></img>
                 <div className="robot-features">
                     <p>
                         Speed: <span>{item.speed}</span>
@@ -37,7 +34,7 @@ export function Robot({
                         Strength: <span>{item.strength}</span>
                     </p>
                     <p>
-                        Creation date: <span>{item.creation}</span>
+                        Creation: <span>{item.creation}</span>
                     </p>
                     <p>
                         Creator: <span>{item.creator}</span>
@@ -45,6 +42,9 @@ export function Robot({
                 </div>
             </a>
             <div className="buttons-group">
+                <button className="remove-btn" onClick={handleClick}>
+                    <span className="material-symbols-outlined">cancel</span>
+                </button>
                 <button onClick={handleUpdateClick}>
                     <span className="material-symbols-outlined">
                         edit_square
