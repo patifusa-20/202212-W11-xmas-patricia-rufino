@@ -31,7 +31,7 @@ export function Robot({
                 <p>{item.robotName}</p>
                 <div className="robot-features">
                     <p>
-                        Velocity: <span>{item.velocity}</span>
+                        Speed: <span>{item.speed}</span>
                     </p>
                     <p>
                         Strength: <span>{item.strength}</span>

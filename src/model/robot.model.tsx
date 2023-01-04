@@ -3,7 +3,7 @@ export type RobotType = {
     robotName: string;
     image: string;
     isFavourite: boolean;
-    velocity: string;
+    speed: string;
     strength: string;
     creation: string;
     creator: string;
@@ -25,7 +25,7 @@ export class RobotObj implements RobotType {
     constructor(
         public robotName: string,
         public image: string,
-        public velocity: string,
+        public speed: string,
         public strength: string,
         public creator: string
     ) {

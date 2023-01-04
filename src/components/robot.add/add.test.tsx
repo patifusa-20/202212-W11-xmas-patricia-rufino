@@ -21,7 +21,7 @@ describe('Given "Add" component in "Robots" page', () => {
 
     describe("When data are provided in the form", () => {
         const mockRobotName = "Test name";
-        const mockVelocity = "Test velocity";
+        const mockSpeed = "Test speed";
         const mockStrength = "Test strength";
         const mockCreator = "Test creator name";
         let inputElements: Array<HTMLElement>;
@@ -36,17 +36,17 @@ describe('Given "Add" component in "Robots" page', () => {
             expect(inputElements[2]).toBeInTheDocument();
             expect(inputElements[3]).toBeInTheDocument();
             userEvent.type(inputElements[0], mockRobotName);
-            userEvent.type(inputElements[1], mockVelocity);
+            userEvent.type(inputElements[1], mockSpeed);
             userEvent.type(inputElements[2], mockStrength);
             userEvent.type(inputElements[3], mockCreator);
             expect(inputElements[0]).toHaveValue(mockRobotName);
-            expect(inputElements[1]).toHaveValue(mockVelocity);
+            expect(inputElements[1]).toHaveValue(mockSpeed);
             expect(inputElements[2]).toHaveValue(mockStrength);
             expect(inputElements[3]).toHaveValue(mockCreator);
         });
         test("Then form could be used for send the function received in props", () => {
             userEvent.type(inputElements[0], mockRobotName);
-            userEvent.type(inputElements[1], mockVelocity);
+            userEvent.type(inputElements[1], mockSpeed);
             userEvent.type(inputElements[2], mockStrength);
             userEvent.type(inputElements[3], mockCreator);
             userEvent.click(elementButton);

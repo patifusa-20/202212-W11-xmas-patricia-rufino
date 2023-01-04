@@ -7,7 +7,7 @@ export function RobotDetails({ robot }: { robot: RobotType }) {
             <img src={robot.image} alt={robot.robotName}></img>
             <div className="robot-features">
                 <p>
-                    Velocity: <span>{robot.velocity}</span>
+                    Speed: <span>{robot.speed}</span>
                 </p>
                 <p>
                     Strength: <span>{robot.strength}</span>

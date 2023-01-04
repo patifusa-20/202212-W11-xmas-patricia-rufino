@@ -4,26 +4,26 @@ import { RobotsRepo } from "./robots.repo";
 describe("Given a Robot Repo", () => {
     const mockRobotName = "Test 1 name";
     const mockImage = "Test image";
-    const mockVelocity = "Test velocity";
+    const mockSpeed = "Test speed";
     const mockStrength = "Test strength";
     const mockCreator = "Test creator name";
     const mockRobotName2 = "Test 2 name";
     const mockImage2 = "Test image";
-    const mockVelocity2 = "Test velocity";
+    const mockSpeed2 = "Test speed";
     const mockStrength2 = "Test strength";
     const mockCreator2 = "Test creator name";
     const mockData = [
         new RobotObj(
             mockRobotName,
             mockImage,
-            mockVelocity,
+            mockSpeed,
             mockStrength,
             mockCreator
         ),
         new RobotObj(
             mockRobotName2,
             mockImage2,
-            mockVelocity2,
+            mockSpeed2,
             mockStrength2,
             mockCreator2
         ),
@@ -64,7 +64,7 @@ describe("Given a Robot Repo", () => {
             created in the repo with its own new id`, async () => {
             const mockNewRobotPayload: Partial<RobotType> = {
                 robotName: "Test robot name",
-                velocity: "Test robot velocity",
+                speed: "Test robot speed",
                 strength: "Test robot strength",
                 creator: "Test robot creator",
             };
@@ -78,10 +78,7 @@ describe("Given a Robot Repo", () => {
                 "robotName",
                 mockNewRobotPayload.robotName
             );
-            expect(data).toHaveProperty(
-                "velocity",
-                mockNewRobotPayload.velocity
-            );
+            expect(data).toHaveProperty("speed", mockNewRobotPayload.speed);
             expect(data).toHaveProperty(
                 "strength",
                 mockNewRobotPayload.strength
