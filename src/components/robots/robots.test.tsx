@@ -8,13 +8,13 @@ jest.mock("../../data/store.robots");
 describe("When it load the data from getRobot", () => {
     const mockRobotName = "Test name";
     const mockImage = "Test image";
-    const mockVelocity = "Test velocity";
+    const mockSpeed = "Test speed";
     const mockStrength = "Test strength";
     const mockCreator = "Test creator name";
     const mockRobot = new RobotObj(
         mockRobotName,
         mockImage,
-        mockVelocity,
+        mockSpeed,
         mockStrength,
         mockCreator
     );
@@ -41,7 +41,7 @@ describe("When it load the data from getRobot", () => {
     test(`Then it should be render the data`, async () => {
         const elementList = await screen.findByRole("list"); // <ul />
         expect(elementList).toBeInTheDocument();
-        const elementItem = await screen.findByText(/Test velocity/i);
+        const elementItem = await screen.findByText(/Test speed/i);
         expect(elementItem).toBeInTheDocument();
     });
 });

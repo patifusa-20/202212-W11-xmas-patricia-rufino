@@ -6,7 +6,7 @@ export function Add({ handleAdd }: { handleAdd: (item: RobotType) => void }) {
     const initialFormData: Partial<RobotType> = {
         robotName: "",
         image: "",
-        velocity: "",
+        speed: "",
         strength: "",
         creator: "",
     };
@@ -25,7 +25,7 @@ export function Add({ handleAdd }: { handleAdd: (item: RobotType) => void }) {
             new RobotObj(
                 formData.robotName as string,
                 formData.image ? formData.image : "",
-                formData.velocity as string,
+                formData.speed as string,
                 formData.strength as string,
                 formData.creator as string
             )
@@ -50,13 +50,13 @@ export function Add({ handleAdd }: { handleAdd: (item: RobotType) => void }) {
                     />
                 </div>
                 <div>
-                    <label htmlFor="velocity">Velocity</label>
+                    <label htmlFor="speed">Speed</label>
                     <input
                         type="text"
-                        name="velocity"
-                        id="velocity"
-                        placeholder="Write a velocity"
-                        value={formData.velocity}
+                        name="speed"
+                        id="speed"
+                        placeholder="Write a speed"
+                        value={formData.speed}
                         onInput={handleInput}
                         required
                     />

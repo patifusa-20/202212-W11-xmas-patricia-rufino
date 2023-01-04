@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { RobotType } from "../../model/robot.model";
+import { DetailsPage } from "../../pages/details/details.page";
 import { FavouritesPage } from "../../pages/favourites/favourites.page";
 import { HomePage } from "../../pages/home/home.page";
 import { RobotsPage } from "../../pages/robots/robots.page";
@@ -52,6 +53,10 @@ export function AppRoutes({
                         handleFavourite={handleFavourite}
                     ></FavouritesPage>
                 }
+            ></Route>
+            <Route
+                path={"/details"}
+                element={<DetailsPage robots={robots}></DetailsPage>}
             ></Route>
         </Routes>
     );

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { RobotType } from "../../model/robot.model";
 import { MenuItems } from "../../types/menu.item";
+import "./home.page.scss";
 
 export function HomePage({
     items,
@@ -12,10 +13,22 @@ export function HomePage({
     return (
         <>
             <h2>Home</h2>
-            <p>{robots.length}</p>
-            <p>ROBOTS</p>
-            <p>available</p>
-            <Link to={items[1].path}>Explorer</Link>
+            <section className="wrapper-home">
+                <h3>{robots.length}</h3>
+                <h3>ROBOTS</h3>
+                <p>available</p>
+                {robots.length ? (
+                    <img src={robots[0].image} alt={robots[0].robotName} />
+                ) : (
+                    ""
+                )}
+                <Link to={items[1].path}>
+                    Explorer{" "}
+                    <span className="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </Link>
+            </section>
         </>
     );
 }

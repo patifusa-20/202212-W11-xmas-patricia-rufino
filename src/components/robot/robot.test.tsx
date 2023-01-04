@@ -6,13 +6,13 @@ import userEvent from "@testing-library/user-event";
 describe("Given Robot component", () => {
     const mockRobotName = "Test name";
     const mockImage = "Test image";
-    const mockVelocity = "Test velocity";
+    const mockSpeed = "Test speed";
     const mockStrength = "Test strength";
     const mockCreator = "Test creator name";
     const mockRobot = new RobotObj(
         mockRobotName,
         mockImage,
-        mockVelocity,
+        mockSpeed,
         mockStrength,
         mockCreator
     );
