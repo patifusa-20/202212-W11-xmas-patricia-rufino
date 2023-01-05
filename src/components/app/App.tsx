@@ -11,6 +11,7 @@ function App() {
         { path: "/home", label: "Home" },
         { path: "/robots", label: "Robots" },
         { path: "/favourites", label: "Favourites" },
+        { path: "/details", label: "Details" },
     ];
 
     const {
