@@ -1,4 +1,5 @@
 import { act, render, screen } from "@testing-library/react";
+import { BrowserRouter } from "react-router-dom";
 import { getRobots } from "../../data/store.robots";
 import { RobotObj } from "../../model/robot.model";
 import { Robots } from "./robots";
@@ -29,12 +30,14 @@ describe("When it load the data from getRobot", () => {
     beforeEach(async () => {
         await act(async () => {
             render(
-                <Robots
-                    robots={mockRobots}
-                    handleUpdate={handleUpdate}
-                    handleDelete={handleDelete}
-                    handleFavourite={handleFavourite}
-                ></Robots>
+                <BrowserRouter>
+                    <Robots
+                        robots={mockRobots}
+                        handleUpdate={handleUpdate}
+                        handleDelete={handleDelete}
+                        handleFavourite={handleFavourite}
+                    ></Robots>
+                </BrowserRouter>
             );
         });
     });
