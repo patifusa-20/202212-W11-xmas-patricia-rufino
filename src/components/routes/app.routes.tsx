@@ -55,7 +55,7 @@ export function AppRoutes({
                 }
             ></Route>
             <Route
-                path={"/details"}
+                path={items[3].path}
                 element={<DetailsPage robots={robots}></DetailsPage>}
             ></Route>
         </Routes>
