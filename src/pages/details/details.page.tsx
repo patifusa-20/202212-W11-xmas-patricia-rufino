@@ -6,7 +6,7 @@ export function DetailsPage({ robots }: { robots: Array<RobotType> }) {
         <>
             <h2>Details Robot</h2>
             {robots.map((item) => {
-                if (item.id === location.search.slice(4)) {
+                if (item.id === location.pathname.slice(19)) {
                     return (
                         <RobotDetails key={item.id} robot={item}></RobotDetails>
                     );

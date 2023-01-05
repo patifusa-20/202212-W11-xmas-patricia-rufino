@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { RobotType } from "../../model/robot.model";
 import "./robot.scss";
 
@@ -23,7 +24,7 @@ export function Robot({
     };
     return (
         <li className="robot-item" aria-label="list-item">
-            <a href={"details?id=" + item.id}>
+            <Link to={`details/id=${item.id}`}>
                 <p>{item.robotName}</p>
                 <img src={item.image} alt={item.robotName}></img>
                 <div className="robot-features">
@@ -40,7 +41,7 @@ export function Robot({
                         Creator: <span>{item.creator}</span>
                     </p>
                 </div>
-            </a>
+            </Link>
             <div className="buttons-group">
                 <button className="remove-btn" onClick={handleClick}>
                     <span className="material-symbols-outlined">cancel</span>
