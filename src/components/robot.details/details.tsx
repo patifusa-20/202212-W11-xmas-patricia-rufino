@@ -3,7 +3,7 @@ import { RobotType } from "../../model/robot.model";
 export function RobotDetails({ robot }: { robot: RobotType }) {
     return (
         <>
-            <h2>{robot.robotName}</h2>
+            <h3>{robot.robotName}</h3>
             <img src={robot.image} alt={robot.robotName}></img>
             <div className="robot-features">
                 <p>

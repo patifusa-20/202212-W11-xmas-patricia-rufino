@@ -2,8 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { Robot } from "./robot";
 import { RobotObj } from "../../model/robot.model";
 import userEvent from "@testing-library/user-event";
-import { Children } from "react";
-import { BrowserRouter, Link } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 describe("Given Robot component", () => {
     const mockRobotName = "Test name";
