@@ -38,7 +38,7 @@ export function Add({ handleAdd }: { handleAdd: (item: RobotType) => void }) {
             <h3>Add robot</h3>
             <form className="add-robot" onSubmit={handleSubmit}>
                 <div>
-                    <label htmlFor="robotName">Name</label>
+                    <label htmlFor="robotName">Robot Name</label>
                     <input
                         type="text"
                         name="robotName"
@@ -55,7 +55,8 @@ export function Add({ handleAdd }: { handleAdd: (item: RobotType) => void }) {
                         type="text"
                         name="speed"
                         id="speed"
-                        placeholder="Write a speed"
+                        pattern="[0-9]+"
+                        placeholder="Number between 0-10"
                         value={formData.speed}
                         onInput={handleInput}
                         required
@@ -67,7 +68,8 @@ export function Add({ handleAdd }: { handleAdd: (item: RobotType) => void }) {
                         type="text"
                         name="strength"
                         id="strength"
-                        placeholder="Write a strength"
+                        pattern="[0-9]+"
+                        placeholder="Number between 0-10"
                         value={formData.strength}
                         onInput={handleInput}
                         required
