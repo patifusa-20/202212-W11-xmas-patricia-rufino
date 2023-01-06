@@ -21,7 +21,7 @@ describe("Given Robot component", () => {
     const handleDelete = jest.fn();
     const handleFavourite = jest.fn();
     describe("When it has been render", () => {
-        test("Then the title should be in the screen", () => {
+        test("Then the button icon text should be in the screen", () => {
             render(
                 <BrowserRouter>
                     <Robot
@@ -46,21 +46,29 @@ describe("Given Robot component", () => {
             userEvent.click(btnUpdate);
             expect(handleUpdate).toHaveBeenCalledTimes(1);
 
-            if (mockRobot.isFavourite) {
-                const btnRemoveFavourite = screen.getByRole("button", {
-                    name: "heart_minus",
-                });
-                expect(btnRemoveFavourite).toBeInTheDocument();
-                userEvent.click(btnRemoveFavourite);
-                expect(handleFavourite).toHaveBeenCalledTimes(1);
-            } else {
-                const btnAddFavourite = screen.getByRole("button", {
-                    name: "heart_plus",
-                });
-                expect(btnAddFavourite).toBeInTheDocument();
-                userEvent.click(btnAddFavourite);
-                expect(handleFavourite).toHaveBeenCalledTimes(1);
-            }
+            const btnAddFavourite = screen.getByRole("button", {
+                name: "heart_plus",
+            });
+            expect(btnAddFavourite).toBeInTheDocument();
+            userEvent.click(btnAddFavourite);
+            expect(handleFavourite).toHaveBeenCalledTimes(1);
+        });
+        test("If Robot is favourite, favourite button icon text should be in the screen", () => {
+            mockRobot.isFavourite = true;
+            render(
+                <BrowserRouter>
+                    <Robot
+                        item={mockRobot}
+                        handleUpdate={handleUpdate}
+                        handleDelete={handleDelete}
+                        handleFavourite={handleFavourite}
+                    ></Robot>
+                </BrowserRouter>
+            );
+            const btnRemoveFavourite = screen.getByRole("button", {
+                name: "heart_minus",
+            });
+            expect(btnRemoveFavourite).toBeInTheDocument();
         });
     });
 });
