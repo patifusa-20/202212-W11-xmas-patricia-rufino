@@ -1,5 +1,5 @@
-import { RobotType } from "../model/robot.model";
 import { RobotsRepo } from "../repository/robots.repo";
+import { RobotType } from "../types/robot.type";
 
 const repo = new RobotsRepo();
 

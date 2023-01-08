@@ -1,5 +1,5 @@
 import { RobotDetails } from "../../components/robot.details/details";
-import { RobotType } from "../../model/robot.model";
+import { RobotType } from "../../types/robot.type";
 
 export function DetailsPage({ robots }: { robots: Array<RobotType> }) {
     return (

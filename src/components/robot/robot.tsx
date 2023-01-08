@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { RobotType } from "../../model/robot.model";
+import { RobotType } from "../../types/robot.type";
 import "./robot.scss";
 
 export function Robot({

@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
-import { RobotType } from "../../model/robot.model";
 import { DetailsPage } from "../../pages/details/details.page";
 import { FavouritesPage } from "../../pages/favourites/favourites.page";
 import { HomePage } from "../../pages/home/home.page";
 import { RobotsPage } from "../../pages/robots/robots.page";
 import { MenuItems } from "../../types/menu.type";
+import { RobotType } from "../../types/robot.type";
 
 export function AppRoutes({
     items,

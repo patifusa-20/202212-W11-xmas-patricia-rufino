@@ -1,4 +1,5 @@
-import { RobotObj, RobotType } from "../model/robot.model";
+import { RobotObj } from "../model/robot.model";
+import { RobotType } from "../types/robot.type";
 import { RobotsRepo } from "./robots.repo";
 
 describe("Given a Robot Repo", () => {

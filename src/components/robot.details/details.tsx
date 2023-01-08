@@ -1,4 +1,4 @@
-import { RobotType } from "../../model/robot.model";
+import { RobotType } from "../../types/robot.type";
 
 export function RobotDetails({ robot }: { robot: RobotType }) {
     return (

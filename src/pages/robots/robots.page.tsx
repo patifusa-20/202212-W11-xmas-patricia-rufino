@@ -1,6 +1,6 @@
 import { Add } from "../../components/robot.add/add";
 import { Robots } from "../../components/robots/robots";
-import { RobotType } from "../../model/robot.model";
+import { RobotType } from "../../types/robot.type";
 
 export function RobotsPage({
     robots,
