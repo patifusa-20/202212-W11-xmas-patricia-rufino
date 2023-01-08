@@ -1,7 +1,7 @@
 import { useCallback, useState } from "react";
-import { getRobots } from "../data/store.robots";
-import { UseRobots } from "../model/hook.model";
-import { RobotType } from "../model/robot.model";
+import { getRobots } from "../service/store.robots";
+import { UseRobots } from "../types/hook.type";
+import { RobotType } from "../types/robot.type";
 import { RobotsRepo } from "../repository/robots.repo";
 
 export function useRobots(): UseRobots {

@@ -4,7 +4,7 @@ import { DetailsPage } from "../../pages/details/details.page";
 import { FavouritesPage } from "../../pages/favourites/favourites.page";
 import { HomePage } from "../../pages/home/home.page";
 import { RobotsPage } from "../../pages/robots/robots.page";
-import { MenuItems } from "../../types/menu.item";
+import { MenuItems } from "../../types/menu.type";
 
 export function AppRoutes({
     items,

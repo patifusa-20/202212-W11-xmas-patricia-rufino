@@ -1,6 +1,6 @@
 import { act, render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
-import { getRobots } from "../../data/store.robots";
+import { getRobots } from "../../service/store.robots";
 import { RobotObj } from "../../model/robot.model";
 import { Robots } from "./robots";
 

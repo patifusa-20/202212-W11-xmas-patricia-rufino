@@ -1,4 +1,4 @@
-import { RobotType } from "./robot.model";
+import { RobotType } from "../types/robot.type";
 
 export type UseRobots = {
     robots: Array<RobotType>;
