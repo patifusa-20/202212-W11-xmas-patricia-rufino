@@ -4,7 +4,7 @@ import { getRobots } from "../../service/store.robots";
 import { RobotObj } from "../../model/robot.model";
 import { Robots } from "./robots";
 
-jest.mock("../../data/store.robots");
+jest.mock("../../service/store.robots");
 
 describe("When it load the data from getRobot", () => {
     const mockRobotName = "Test name";
