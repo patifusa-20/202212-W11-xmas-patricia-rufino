@@ -1,4 +1,5 @@
-import { Route, Routes } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Route, Routes, useParams } from "react-router-dom";
 import { DetailsPage } from "../../pages/details/details.page";
 import { FavouritesPage } from "../../pages/favourites/favourites.page";
 import { HomePage } from "../../pages/home/home.page";
@@ -55,7 +56,7 @@ export function AppRoutes({
                 }
             ></Route>
             <Route
-                path={":page/:id"}
+                path=":page/:robotId"
                 element={<DetailsPage robots={robots}></DetailsPage>}
             ></Route>
         </Routes>

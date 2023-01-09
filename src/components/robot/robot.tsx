@@ -23,8 +23,8 @@ export function Robot({
         handleFavourite(item);
     };
     return (
-        <li className="robot-item" aria-label="list-item">
-            <Link to={`id=${item.id}`}>
+        <li className="robot-item" aria-label="list-item" data-id={item.id}>
+            <Link to={item.id}>
                 <p>{item.robotName}</p>
                 <img src={item.image} alt={item.robotName}></img>
                 <div className="robot-features">
