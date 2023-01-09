@@ -99,23 +99,16 @@
             "id": "354492",
             "isFavourite": false,
             "creation": "30/12/2022, 9:36:05"
-        }
-    ],
-    "posts": [
+        },
         {
-            "id": 1,
-            "title": "json-server",
-            "author": "typicode"
+            "robotName": "benjamon",
+            "image": "https://robohash.org/benjamon.png",
+            "speed": "16",
+            "strength": "3",
+            "creator": "Patri",
+            "id": "134925",
+            "isFavourite": true,
+            "creation": "9/1/2023"
         }
-    ],
-    "comments": [
-        {
-            "id": 1,
-            "body": "some comment",
-            "postId": 1
-        }
-    ],
-    "profile": {
-        "name": "typicode"
-    }
+    ]
 }

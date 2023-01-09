@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import { Route, Routes, useParams } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { DetailsPage } from "../../pages/details/details.page";
 import { FavouritesPage } from "../../pages/favourites/favourites.page";
 import { HomePage } from "../../pages/home/home.page";
