@@ -41,16 +41,9 @@ describe("Given storage functions", () => {
     });
 
     describe("When we use saveRobots", () => {
-        // const saveRobots = async (robots: Array<RobotType>) => {
-        //     mockSetStorageList("robots", robots);
-        // };
-        // beforeEach(() => {
-        //     mockSetStorageList = jest.fn();
-        // });
         test("Web API function should be call", () => {
             const mockRobotsStore: Array<RobotType> = [];
             saveRobots(mockRobotsStore);
-            //expect(setStorageList).toHaveBeenCalled();
         });
     });
 });
