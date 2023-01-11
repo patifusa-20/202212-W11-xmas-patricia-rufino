@@ -37,7 +37,7 @@
             "strength": "3",
             "creator": "Patri",
             "id": "155932",
-            "isFavourite": false,
+            "isFavourite": true,
             "creation": "27/12/2022, 20:23:56"
         },
         {
@@ -109,6 +109,16 @@
             "id": "134925",
             "isFavourite": true,
             "creation": "9/1/2023"
+        },
+        {
+            "robotName": "juleo",
+            "image": "https://robohash.org/juleo.png",
+            "speed": "4",
+            "strength": "12",
+            "creator": "Patri",
+            "id": "479215",
+            "isFavourite": false,
+            "creation": "11/1/2023"
         }
     ]
 }

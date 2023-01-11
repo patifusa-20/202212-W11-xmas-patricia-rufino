@@ -24,6 +24,7 @@ describe('Given "Add" component in "Robots" page', () => {
         const mockSpeed = "Test speed";
         const mockStrength = "Test strength";
         const mockCreator = "Test creator name";
+        const mockImage = "Test image";
         let inputElements: Array<HTMLElement>;
         let elementButton: HTMLElement;
         beforeEach(() => {
