@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MenuItems } from "../../types/menu.item";
+import { MenuItems } from "../../types/menu.type";
 import "./menu.scss";
 export function Menu({ items }: { items: MenuItems }) {
     return (

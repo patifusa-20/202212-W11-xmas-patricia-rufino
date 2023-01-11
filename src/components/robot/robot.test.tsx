@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { Robot } from "./robot";
 import { RobotObj } from "../../model/robot.model";
 import userEvent from "@testing-library/user-event";
-import { BrowserRouter } from "react-router-dom";
+import { MemoryRouter as Router } from "react-router-dom";
 
 describe("Given Robot component", () => {
     const mockRobotName = "Test name";
@@ -23,14 +23,14 @@ describe("Given Robot component", () => {
     describe("When it has been render", () => {
         test("Then the button icon text should be in the screen", () => {
             render(
-                <BrowserRouter>
+                <Router>
                     <Robot
                         item={mockRobot}
                         handleUpdate={handleUpdate}
                         handleDelete={handleDelete}
                         handleFavourite={handleFavourite}
                     ></Robot>
-                </BrowserRouter>
+                </Router>
             );
             const btnDelete = screen.getByRole("button", {
                 name: "cancel",
@@ -56,14 +56,14 @@ describe("Given Robot component", () => {
         test("If Robot is favourite, favourite button icon text should be in the screen", () => {
             mockRobot.isFavourite = true;
             render(
-                <BrowserRouter>
+                <Router>
                     <Robot
                         item={mockRobot}
                         handleUpdate={handleUpdate}
                         handleDelete={handleDelete}
                         handleFavourite={handleFavourite}
                     ></Robot>
-                </BrowserRouter>
+                </Router>
             );
             const btnRemoveFavourite = screen.getByRole("button", {
                 name: "heart_minus",

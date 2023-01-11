@@ -1,4 +1,4 @@
-import { RobotType } from "../model/robot.model.js";
+import { RobotType } from "../types/robot.type.js";
 import { Repository } from "./repo.js";
 
 const invalidIdError = new Error("Invalid ID");

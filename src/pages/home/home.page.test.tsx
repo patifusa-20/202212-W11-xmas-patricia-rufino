@@ -3,7 +3,7 @@ import { HomePage } from "./home.page";
 import { Robots } from "../../components/robots/robots";
 import { Menu } from "../../components/menu/menu";
 import { RobotObj } from "../../model/robot.model";
-import { MenuItems } from "../../types/menu.item";
+import { MenuItems } from "../../types/menu.type";
 import { BrowserRouter } from "react-router-dom";
 jest.mock("../../components/robots/robots");
 jest.mock("../../components/menu/menu");

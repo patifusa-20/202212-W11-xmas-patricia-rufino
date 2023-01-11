@@ -1,5 +1,6 @@
 import { SyntheticEvent, useState } from "react";
-import { RobotObj, RobotType } from "../../model/robot.model";
+import { RobotObj } from "../../model/robot.model";
+import { RobotType } from "../../types/robot.type";
 import "./add.scss";
 
 export function Add({ handleAdd }: { handleAdd: (item: RobotType) => void }) {

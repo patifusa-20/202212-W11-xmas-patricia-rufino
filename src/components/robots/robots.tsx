@@ -1,4 +1,4 @@
-import { RobotType } from "../../model/robot.model";
+import { RobotType } from "../../types/robot.type";
 import { Robot } from "../robot/robot";
 import "./robots.scss";
 

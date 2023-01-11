@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { RobotType } from "../../model/robot.model";
-import { MenuItems } from "../../types/menu.item";
+import { MenuItems } from "../../types/menu.type";
+import { RobotType } from "../../types/robot.type";
 import "./home.page.scss";
 
 export function HomePage({

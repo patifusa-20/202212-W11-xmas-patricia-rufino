@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import { saveRobots } from "../../data/store.robots";
+import { saveRobots } from "../../service/store.robots";
 import { useRobots } from "../../hooks/use.robots";
-import { MenuItems } from "../../types/menu.item";
+import { MenuItems } from "../../types/menu.type";
 import { Layout } from "../layout/layout";
 import { AppRoutes } from "../routes/app.routes";
 import "./App.scss";

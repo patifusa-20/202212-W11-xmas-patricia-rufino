@@ -1,14 +1,4 @@
-export type RobotType = {
-    id: string;
-    robotName: string;
-    image: string;
-    isFavourite: boolean;
-    speed: string;
-    strength: string;
-    creation: string;
-    creator: string;
-};
-
+import { RobotType } from "../types/robot.type";
 export class RobotObj implements RobotType {
     static generateId() {
         const aNumbers = new Uint32Array(1);
@@ -17,9 +7,8 @@ export class RobotObj implements RobotType {
     }
     static generateDate() {
         const currentDate = new Date();
-        const formatDate = currentDate.toLocaleString();
-        const removeTime = formatDate.split(",");
-        return removeTime[0];
+        const formatDate = currentDate.toLocaleDateString();
+        return formatDate;
     }
     id: string;
     isFavourite: boolean;
