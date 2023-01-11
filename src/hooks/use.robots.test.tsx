@@ -7,17 +7,19 @@ import {
     mockUpdateRobot,
     mockValidRepoResponse,
     mockRobots,
+    mockGetRobots,
 } from "./mock.use.robots";
 
 import { RobotsRepo } from "../repository/robots.repo";
 import { useRobots } from "./use.robots";
 
 jest.mock("../repository/robots.repo");
-
 RobotsRepo.prototype.load = jest.fn();
 RobotsRepo.prototype.create = jest.fn();
 RobotsRepo.prototype.update = jest.fn();
 RobotsRepo.prototype.delete = jest.fn();
+
+jest.mock("../service/store.robots");
 
 describe(`Given useRobots (custom hook)
             render with a virtual component`, () => {
@@ -68,7 +70,7 @@ describe(`Given useRobots (custom hook)
             act(() => {
                 userEvent.click(buttons[0]);
             });
-            expect(RobotsRepo.prototype.load).toHaveBeenCalled();
+            expect(mockGetRobots).toHaveBeenCalled();
             expect(
                 await screen.findByText(mockRobot1.robotName)
             ).toBeInTheDocument();
@@ -81,7 +83,6 @@ describe(`Given useRobots (custom hook)
             expect(await screen.findByText(/add/i)).toBeInTheDocument();
             act(() => {
                 userEvent.click(buttons[1]);
-                userEvent.click(buttons[0]);
             });
             expect(RobotsRepo.prototype.create).toHaveBeenCalled();
         });

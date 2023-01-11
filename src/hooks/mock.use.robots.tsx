@@ -1,5 +1,6 @@
 import { RobotObj } from "../model/robot.model";
 import { RobotsRepo } from "../repository/robots.repo";
+import { getRobots } from "../service/store.robots";
 export const mockRobot1 = new RobotObj(
     "Test Robot 1",
     "image",
@@ -35,3 +36,7 @@ export const mockValidRepoResponse = () => {
     );
     (RobotsRepo.prototype.delete as jest.Mock).mockResolvedValue(mockRobot1.id);
 };
+
+export const mockGetRobots = (getRobots as jest.Mock).mockResolvedValue(
+    mockRobots
+);

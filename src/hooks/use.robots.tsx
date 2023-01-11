@@ -6,8 +6,7 @@ import { RobotsRepo } from "../repository/robots.repo";
 
 export function useRobots(): UseRobots {
     const repo = new RobotsRepo();
-    //const data = getRobots();
-    const data = repo.load();
+    const data = getRobots();
     const initialState: Array<RobotType> = [];
 
     const [robots, setRobots] = useState(initialState);
