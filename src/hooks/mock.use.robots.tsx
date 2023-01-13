@@ -26,7 +26,7 @@ export const mockAddRobot = new RobotObj(
     "Prueba"
 );
 mockAddRobot.id = "000003";
-export const mockUpdateRobot = { ...mockRobot2, title: "Update Robot" };
+export const mockUpdateRobot = { ...mockRobot2, robotName: "Updated Robot" };
 
 export const mockValidRepoResponse = () => {
     (RobotsRepo.prototype.load as jest.Mock).mockResolvedValue(mockRobots);
