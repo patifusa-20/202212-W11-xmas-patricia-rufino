@@ -5,13 +5,11 @@ import { RobotType } from "../../types/robot.type";
 export function RobotsPage({
     robots,
     handleAdd,
-    handleUpdate,
     handleDelete,
     handleFavourite,
 }: {
     robots: Array<RobotType>;
     handleAdd: (robot: RobotType) => void;
-    handleUpdate: (robot: Partial<RobotType>) => void;
     handleDelete: (id: RobotType["id"]) => void;
     handleFavourite: (robot: Partial<RobotType>) => void;
 }) {
@@ -21,7 +19,6 @@ export function RobotsPage({
             <Add handleAdd={handleAdd}></Add>
             <Robots
                 robots={robots}
-                handleUpdate={handleUpdate}
                 handleDelete={handleDelete}
                 handleFavourite={handleFavourite}
             ></Robots>

@@ -17,9 +17,9 @@ function App() {
         robots,
         handleLoad,
         handleAdd,
-        handleUpdate,
         handleDelete,
         handleFavourite,
+        handleUpdate,
     } = useRobots();
 
     useEffect(() => {
@@ -39,9 +39,9 @@ function App() {
                     items={items}
                     robots={robots}
                     handleAdd={handleAdd}
-                    handleUpdate={handleUpdate}
                     handleDelete={handleDelete}
                     handleFavourite={handleFavourite}
+                    handleUpdate={handleUpdate}
                 ></AppRoutes>
             </Layout>
         </>
