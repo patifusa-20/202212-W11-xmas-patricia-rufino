@@ -17,7 +17,6 @@ describe("Given FavouritesPage component", () => {
         mockStrength,
         mockCreator
     );
-    const handleUpdate = jest.fn();
     const handleDelete = jest.fn();
     const handleFavourite = jest.fn();
     const mockRobots = [mockRobot];
@@ -32,7 +31,6 @@ describe("Given FavouritesPage component", () => {
             render(
                 <FavouritesPage
                     robots={mockRobots}
-                    handleUpdate={handleUpdate}
                     handleDelete={handleDelete}
                     handleFavourite={handleFavourite}
                 />

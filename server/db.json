@@ -1,116 +1,6 @@
 {
     "robotsData": [
         {
-            "robotName": "Clotilde",
-            "image": "https://robohash.org/Clotilde.png",
-            "velocity": "3",
-            "strength": "2",
-            "creator": "Carla",
-            "id": "509134",
-            "isFavourite": false,
-            "creation": "27/12/2022, 19:10:26"
-        },
-        {
-            "robotName": "benjamon",
-            "image": "https://robohash.org/benjamon.png",
-            "velocity": "2",
-            "strength": "6",
-            "creator": "Patri",
-            "id": "239904",
-            "isFavourite": true,
-            "creation": "27/12/2022, 20:22:20"
-        },
-        {
-            "robotName": "Boltenic",
-            "image": "https://robohash.org/Boltenic.png",
-            "velocity": "9",
-            "strength": "3",
-            "creator": "Patri",
-            "id": "351554",
-            "isFavourite": true,
-            "creation": "27/12/2022, 20:23:37"
-        },
-        {
-            "robotName": "Hernek",
-            "image": "https://robohash.org/Hernek.png",
-            "velocity": "9",
-            "strength": "3",
-            "creator": "Patri",
-            "id": "155932",
-            "isFavourite": true,
-            "creation": "27/12/2022, 20:23:56"
-        },
-        {
-            "robotName": "Artos",
-            "image": "https://robohash.org/Artos.png",
-            "velocity": "9",
-            "strength": "2",
-            "creator": "Patri",
-            "id": "432992",
-            "isFavourite": false,
-            "creation": "27/12/2022, 20:24:25"
-        },
-        {
-            "robotName": "elenok",
-            "image": "https://robohash.org/elenok.png",
-            "velocity": "3",
-            "strength": "2",
-            "creator": "Patricia",
-            "id": "224567",
-            "isFavourite": false,
-            "creation": "27/12/2022, 20:25:23"
-        },
-        {
-            "robotName": "margo",
-            "image": "https://robohash.org/margo.png",
-            "velocity": "3",
-            "strength": "2",
-            "creator": "Patri",
-            "id": "866059",
-            "isFavourite": true,
-            "creation": "29/12/2022, 15:51:22"
-        },
-        {
-            "robotName": "juleo",
-            "image": "https://robohash.org/juleo.png",
-            "velocity": "2",
-            "strength": "2",
-            "creator": "Patri",
-            "id": "660262",
-            "isFavourite": false,
-            "creation": "30/12/2022, 8:05:48"
-        },
-        {
-            "robotName": "Marina",
-            "image": "https://robohash.org/Marina.png",
-            "velocity": "4",
-            "strength": "3",
-            "creator": "Patricia",
-            "id": "141938",
-            "isFavourite": false,
-            "creation": "30/12/2022, 9:03:46"
-        },
-        {
-            "robotName": "Gargamel",
-            "image": "https://robohash.org/Gargamel.png",
-            "velocity": "2",
-            "strength": "3",
-            "creator": "Patricia",
-            "id": "354492",
-            "isFavourite": false,
-            "creation": "30/12/2022, 9:36:05"
-        },
-        {
-            "robotName": "benjamon",
-            "image": "https://robohash.org/benjamon.png",
-            "speed": "16",
-            "strength": "3",
-            "creator": "Patri",
-            "id": "134925",
-            "isFavourite": true,
-            "creation": "9/1/2023"
-        },
-        {
             "robotName": "juleo",
             "image": "https://robohash.org/juleo.png",
             "speed": "4",
@@ -119,6 +9,56 @@
             "id": "479215",
             "isFavourite": false,
             "creation": "11/1/2023"
+        },
+        {
+            "robotName": "Clotilde",
+            "image": "https://robohash.org/Clotilde.png",
+            "speed": "7",
+            "strength": "5",
+            "creator": "Cleo",
+            "id": "306634",
+            "isFavourite": true,
+            "creation": "11/1/2023"
+        },
+        {
+            "robotName": "Rocatronic",
+            "image": "https://robohash.org/Rocatronic.png",
+            "speed": "6",
+            "strength": "7",
+            "creator": "Marisa",
+            "id": "174340",
+            "isFavourite": true,
+            "creation": "11/1/2023"
+        },
+        {
+            "robotName": "Margo",
+            "image": "https://robohash.org/Margo.png",
+            "speed": "10",
+            "strength": "3",
+            "creator": "Teo",
+            "id": "448966",
+            "isFavourite": false,
+            "creation": "13/1/2023"
+        },
+        {
+            "robotName": "Gargamela",
+            "image": "https://robohash.org/Gargamel.png",
+            "speed": "1",
+            "strength": "5",
+            "creator": "Carmen",
+            "id": "138451",
+            "isFavourite": true,
+            "creation": "13/1/2023"
+        },
+        {
+            "robotName": "Caramelo",
+            "image": "https://robohash.org/Caramelo.png",
+            "speed": "5",
+            "strength": "2",
+            "creator": "Patri",
+            "id": "554613",
+            "isFavourite": false,
+            "creation": "13/1/2023"
         }
     ]
 }

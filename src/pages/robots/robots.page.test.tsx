@@ -18,7 +18,6 @@ describe("Given RobotsPage component", () => {
         mockCreator
     );
     const handleAdd = jest.fn();
-    const handleUpdate = jest.fn();
     const handleDelete = jest.fn();
     const handleFavourite = jest.fn();
     const mockRobots = [mockRobot];
@@ -34,7 +33,6 @@ describe("Given RobotsPage component", () => {
                 <RobotsPage
                     robots={mockRobots}
                     handleAdd={handleAdd}
-                    handleUpdate={handleUpdate}
                     handleDelete={handleDelete}
                     handleFavourite={handleFavourite}
                 />

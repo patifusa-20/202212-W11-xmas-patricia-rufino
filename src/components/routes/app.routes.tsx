@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { DetailsPage } from "../../pages/details/details.page";
+import { EditPage } from "../../pages/edit/edit.page";
 import { FavouritesPage } from "../../pages/favourites/favourites.page";
 import { HomePage } from "../../pages/home/home.page";
 import { RobotsPage } from "../../pages/robots/robots.page";
@@ -10,16 +11,16 @@ export function AppRoutes({
     items,
     robots,
     handleAdd,
-    handleUpdate,
     handleDelete,
     handleFavourite,
+    handleUpdate,
 }: {
     items: MenuItems;
     robots: Array<RobotType>;
     handleAdd: (robot: RobotType) => void;
-    handleUpdate: (robot: Partial<RobotType>) => void;
     handleDelete: (id: RobotType["id"]) => void;
     handleFavourite: (robot: Partial<RobotType>) => void;
+    handleUpdate: (robot: Partial<RobotType>) => void;
 }) {
     return (
         <Routes>
@@ -37,7 +38,6 @@ export function AppRoutes({
                     <RobotsPage
                         robots={robots}
                         handleAdd={handleAdd}
-                        handleUpdate={handleUpdate}
                         handleDelete={handleDelete}
                         handleFavourite={handleFavourite}
                     ></RobotsPage>
@@ -48,7 +48,6 @@ export function AppRoutes({
                 element={
                     <FavouritesPage
                         robots={robots}
-                        handleUpdate={handleUpdate}
                         handleDelete={handleDelete}
                         handleFavourite={handleFavourite}
                     ></FavouritesPage>
@@ -57,6 +56,15 @@ export function AppRoutes({
             <Route
                 path=":page/:robotId"
                 element={<DetailsPage robots={robots}></DetailsPage>}
+            ></Route>
+            <Route
+                path=":page/edit/:robotName"
+                element={
+                    <EditPage
+                        robots={robots}
+                        handleUpdate={handleUpdate}
+                    ></EditPage>
+                }
             ></Route>
         </Routes>
     );

@@ -17,7 +17,6 @@ describe("Given Robot component", () => {
         mockStrength,
         mockCreator
     );
-    const handleUpdate = jest.fn();
     const handleDelete = jest.fn();
     const handleFavourite = jest.fn();
     describe("When it has been render", () => {
@@ -26,7 +25,6 @@ describe("Given Robot component", () => {
                 <Router>
                     <Robot
                         item={mockRobot}
-                        handleUpdate={handleUpdate}
                         handleDelete={handleDelete}
                         handleFavourite={handleFavourite}
                     ></Robot>
@@ -43,8 +41,6 @@ describe("Given Robot component", () => {
                 name: "edit_square",
             });
             expect(btnUpdate).toBeInTheDocument();
-            userEvent.click(btnUpdate);
-            expect(handleUpdate).toHaveBeenCalledTimes(1);
 
             const btnAddFavourite = screen.getByRole("button", {
                 name: "heart_plus",
@@ -59,7 +55,6 @@ describe("Given Robot component", () => {
                 <Router>
                     <Robot
                         item={mockRobot}
-                        handleUpdate={handleUpdate}
                         handleDelete={handleDelete}
                         handleFavourite={handleFavourite}
                     ></Robot>

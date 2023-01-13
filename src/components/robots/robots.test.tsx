@@ -19,7 +19,7 @@ describe("When it load the data from getRobot", () => {
         mockStrength,
         mockCreator
     );
-    const handleUpdate = jest.fn();
+
     const handleDelete = jest.fn();
     const handleFavourite = jest.fn();
     const mockRobots = [mockRobot];
@@ -33,7 +33,6 @@ describe("When it load the data from getRobot", () => {
                 <BrowserRouter>
                     <Robots
                         robots={mockRobots}
-                        handleUpdate={handleUpdate}
                         handleDelete={handleDelete}
                         handleFavourite={handleFavourite}
                     ></Robots>

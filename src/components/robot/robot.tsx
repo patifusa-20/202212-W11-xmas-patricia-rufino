@@ -4,20 +4,15 @@ import "./robot.scss";
 
 export function Robot({
     item,
-    handleUpdate,
     handleDelete,
     handleFavourite,
 }: {
     item: RobotType;
-    handleUpdate: (robot: Partial<RobotType>) => void;
     handleDelete: (id: RobotType["id"]) => void;
     handleFavourite: (robot: Partial<RobotType>) => void;
 }) {
     const handleClick = () => {
         handleDelete(item.id);
-    };
-    const handleUpdateClick = () => {
-        handleUpdate(item);
     };
     const handleFavouriteClick = () => {
         handleFavourite(item);
@@ -46,12 +41,13 @@ export function Robot({
                 <button className="remove-btn" onClick={handleClick}>
                     <span className="material-symbols-outlined">cancel</span>
                 </button>
-                <button onClick={handleUpdateClick}>
-                    <span className="material-symbols-outlined">
-                        edit_square
-                    </span>
-                </button>
-
+                <Link to={`edit/${item.robotName}`}>
+                    <button>
+                        <span className="material-symbols-outlined">
+                            edit_square
+                        </span>
+                    </button>
+                </Link>
                 <button onClick={handleFavouriteClick}>
                     {item.isFavourite ? (
                         <span className="material-symbols-outlined">
